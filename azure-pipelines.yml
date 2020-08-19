@@ -27,6 +27,11 @@ steps:
       git config --global user.email $EMAIL
       git config --global user.name $NAME
 
+- task: GitHubComment@0
+  inputs:
+    gitHubConnection: 'karlosarr'
+    repositoryName: 'cv'
+
 - script: |
     npm run deploy
   displayName: 'Deploy'
