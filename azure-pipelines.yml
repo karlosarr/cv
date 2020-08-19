@@ -27,6 +27,8 @@ steps:
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
       git config --global user.email $EMAIL
       git config --global user.name $NAME
+    noProfile: false
+    noRc: false
 
 - task: GitHubComment@0
   inputs:
