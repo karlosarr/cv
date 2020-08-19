@@ -20,6 +20,13 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      git config --global user.email $EMAIL
+      git config --global user.name $NAME
+
 - script: |
     npm run deploy
   displayName: 'Deploy'
