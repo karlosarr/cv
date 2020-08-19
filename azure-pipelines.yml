@@ -29,13 +29,7 @@ steps:
       git config --global --add url."git@github.com:".insteadOf "https://github.com/"
       git config --global user.email $EMAIL
       git config --global user.name $NAME
-    noProfile: false
-    noRc: false
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
+      git --version
       npm run deploy
     noProfile: false
     noRc: false
