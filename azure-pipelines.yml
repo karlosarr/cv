@@ -12,6 +12,7 @@ pool:
 steps:
 - checkout: self
   persistCredentials: true
+  clean: true
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -30,6 +31,7 @@ steps:
       git config --global user.name $NAME
     noProfile: false
     noRc: false
+
 - task: Bash@3
   inputs:
     targetType: 'inline'
