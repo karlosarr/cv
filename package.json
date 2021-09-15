@@ -4,8 +4,8 @@
   "homepage": "https://karlosarr.github.io/cv",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
+    "@testing-library/jest-dom": "^5.1.0",
+    "@testing-library/react": "^10.0.0",
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-cv": "^1.1.0",
